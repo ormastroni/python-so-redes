@@ -32,7 +32,6 @@ os.rmdir('nova_pasta')
 print(os.listdir(r'C:\users\andre'))
 
 p = 'arq_texto.txt'
-p = 'bbb'
 if os.path.isdir(p):
     print(p, 'é um diretorio!')
 else:
