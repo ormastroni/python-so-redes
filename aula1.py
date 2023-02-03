@@ -6,7 +6,7 @@ Created on Mon Jan 31 19:39:56 2022
 """
 
 ## Módulo os
-import os
+import os, time
 
 ## Nomes do sistema operacional e do usuário logado
 print(os.name)
@@ -29,10 +29,43 @@ print('diretorio criado')
 os.rename('novo_dir', 'nova_pasta')
 os.rmdir('nova_pasta')
 
-print(os.listdir(r'C:\users\andre'))
+## Retorna uma lista com o conteúdo do diretório
+print(os.listdir())
 
-p = 'arq_texto.txt'
+## Distinção emtre arquivos e diretórios: isfile() e isdir()
+p = 'projeto'
 if os.path.isdir(p):
     print(p, 'é um diretorio!')
 else:
     print(p, 'não é um diretorio!')
+
+
+f = 'aula1.py'
+if os.path.isfile(f):
+    print(f, 'é um arquivo!')
+else:
+    print(f, 'não é um arquivo!')
+
+
+## Pegar o nome de um arquivo num caminho completo
+print(os.path.basename("C:\\Users\\Teste\\Desktop\\Exemplos\\arq_texto.txt"))
+
+## Pegar o nome do diretório num caminho completo
+print(os.path.dirname("C:\\Users\\Teste\\Desktop\\Exemplos\\arq_texto.txt"))
+
+## Pegar o nome completo do caminho de um arquivo
+print(os.path.abspath('arq_texto.txt'))
+
+## Pegar uma tupla que separa o nome do caminho do nome do arquivo
+print(os.path.split("C:\\Users\\Teste\\Desktop\\Exemplos\\arq_texto.txt"))
+
+## Juntando os pedaços de um caminho
+print(os.path.join("C:", "Users", "Teste", "arq_texto.txt"))
+
+## Pegando o status de um arquivo
+print(os.stat('aula1.py'))
+
+status = os.stat('README.md')
+## Formatando a data
+print(status.st_mtime)
+print(time.ctime(status.st_mtime))
