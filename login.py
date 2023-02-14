@@ -7,7 +7,7 @@ print(os.environ['INFNET_USER'])
 print(os.environ['INFNET_PASSWD'])
 
 usuario = input('Entre com o login:')
-senha = input('Senha:')
+senha = input('Entre com a senha:')
 home_dir = r'C:\Users\andre\temp'
 
 def autenticate(usr, passw):
