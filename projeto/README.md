@@ -16,8 +16,7 @@ Vamos atualizar o projeto desenvolvido na disciplina anterior para transformar o
  3. Transforme os comandos **ls, mkdir e rmdir** para interagirem com o sistema de arquivos da sua máquina. Ou seja, o **ls** retorna os arquivos que estão no diretório especificado do comando (ou o atual, caso seja omitido do comando) e o **mkdir/rmdir** cria/remove um subdiretório. Você não precisa mais manter suas estruturas de dicionário do emulador.
  4. Transforme os comandos cp e mv para interagirem com o sistema de arquivos da sua máquina
  5. Transforme os comandos new e del para interagirem com o sistema de arquivos da sua máquina
- 6. Implemente o módulo de backup (a ser detalhado futuramente)
- 7. Trate todas as exceções e possíveis erros dos comandos
- 8. Implemente um módulo de busca de arquivos (a ser detalhado futuramente)
- 9. Outras funcionalidades ainda serão propostas
+ 6. Implemente o módulo de backup: Crie uma variável de ambiente chamada **BACKUP_HOME** para gaurdar o caminho da sua máquina onde deve ser mantido um backup. Crie um novo comando para o shell com a seguinte sintaxe: **backup [nome-backup]**. Este comando deve criar uma pasta com o nome do backup no **BACKUP_HOME** e copiar todo o conteúdo do diretório atual (onde o comando foi executado) para o diretório do backup.
+ 7. Trate todas as exceções e possíveis erros dos comandos. Os eventuais erros devem ser guardados num arquivo de log com o rótulo ERROR. Todos os comandos executados na sessão do shell devem ser logados no modo DEBUG
+ 8. Outras funcionalidades ainda serão propostas
 
