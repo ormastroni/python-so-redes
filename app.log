@@ -1,3 +1,26 @@
 root - WARNING - This is a warning message
 root - ERROR - This is an error message
 root - CRITICAL - This is a critical message
+root - WARNING - This is a warning message
+root - ERROR - This is an error message
+root - CRITICAL - This is a critical message
+root - ERROR - John gerou um erro
+root - WARNING - This is a warning message
+root - ERROR - This is an error message
+root - CRITICAL - This is a critical message
+root - WARNING - andre logou no sistema
+root - ERROR - Exceção gerada
+root - WARNING - This is a warning message
+root - ERROR - This is an error message
+root - CRITICAL - This is a critical message
+root - WARNING - joao logou no sistema
+root - ERROR - Exceção gerada
+Traceback (most recent call last):
+  File "c:/Users/andre/src/infnet/python-so-redes/aula4.py", line 23, in <module>
+    c = a / b
+ZeroDivisionError: division by zero
+root - WARNING - This is a warning message
+root - ERROR - This is an error message
+root - CRITICAL - This is a critical message
+root - WARNING - bbb logou no sistema
+root - ERROR - Exceção gerada

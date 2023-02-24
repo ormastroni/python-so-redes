@@ -1,7 +1,7 @@
 
 import os
 
-try:
+'''try:
     x = int(input('Entre com o valor da conta: '))
     desc = float(input('Entre com o valor do desconto: '))
     valor_desconto = x * desc
@@ -17,15 +17,15 @@ except ZeroDivisionError:
 else:
     print('O programa rodou')
 finally:
-    print('passei pelo finally')
+    print('passei pelo finally')'''
 
 ## Exercício proposto:
 
-'''while True:
+while True:
     try:
         x = int(input('Entre com um valor: '))
         break
     except ValueError:
         print('Oops... Entre com um valor numérico')
 
-print(f'O valor do dobro eh {2*x}')'''
+print(f'O valor do dobro eh {2*x}')

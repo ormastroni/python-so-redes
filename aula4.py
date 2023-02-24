@@ -1,10 +1,10 @@
 import logging
 
 ### Diferentes tipos de configuração:
-#logging.basicConfig(level=logging.DEBUG)
-#logging.basicConfig(format='%(process)d-%(levelname)s-%(message)s')
+#logging.basicConfig(level=logging.INFO)
+#logging.basicConfig(level=logging.DEBUG, format='%(process)d-%(levelname)s-%(message)s')
 #logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
-#logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='app.log', filemode='a', format='%(name)s - %(levelname)s - %(message)s')
 
 logging.debug('This is a debug message')
 logging.info('This is an info message')
@@ -13,8 +13,8 @@ logging.error('This is an error message')
 logging.critical('This is a critical message')
 
 ## Logando variáveis
-name = 'John'
-logging.error(f'{name} gerou um erro')
+name = input('Entre com o nome do usuario: ')
+logging.warning(f'{name} logou no sistema')
 
 ## Capturando as pilhas de exceções
 a = 5
