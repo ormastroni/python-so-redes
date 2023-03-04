@@ -16,7 +16,7 @@ Scripts Python desenvolvidos ao longo do curso da Infnet
 ## Etapa 4: Módulo logging e manipulação de arquivos
 - Logando o fluxo de execução do código e leitura/escrita de arquivos
 
-## Etapa 5: Entrega da primeira fase do projeto e programação em rede com sockets TCP
-- Logando o fluxo de execução do código e leitura/escrita de arquivos
+## Etapa 5: Programação em rede com sockets TCP
+- Entrega da primeira fase do projeto e aplicações cliente/servidor com sockets
 
 
