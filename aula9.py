@@ -10,14 +10,14 @@ b = 2
 c = 3
 d = 4
 
-'''t1 = time.time()
+t1 = time.time()
 minhaFunc(a)
 minhaFunc(b)
 minhaFunc(c)
 minhaFunc(d)
-t2 = time.time()'''
+t2 = time.time()
 
-#print(f'Tempo de execução {t2-t1} segundos')
+print(f'Tempo de execução sequencial {t2-t1} segundos')
 
 tempo1 = time.time()
 
@@ -37,4 +37,4 @@ t3.join()
 t4.join()
 
 tempo2 = time.time()
-print(f'Tempo de execução {tempo2-tempo1} segundos')
+print(f'Tempo de execução multithread {tempo2-tempo1} segundos')
